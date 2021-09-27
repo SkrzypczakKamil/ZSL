@@ -1,28 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Wybierz jedną z opcji</h1>
+<form action="skrypt1.php" 
+    <form method="post">
+
+    <input type="text" name="sideA" placeholder="podaj bok">
+    <input type="submit"value="zatwierdź figure">
+    
+
+
+</form>
 <?php
-echo PHP_VERSION;//wersja php
-echo 2**10;
 
-$x=10;
-$y=1;
-
-echo $x<==>$y;
-
-//równe , identyczne
-
-$x=1;
-$y=1.0;
-echo gettype($x);//integer
-echo gettype($y); //double
-
-if ($x==$y) {
-    echo"równe";
-}else{
-    echo"różne";
+if (!empty($_POST['sideA'])){
+$slideA=$_POST["sideA"];
+$area=$sideA;
+$circuit=4*$sideA;
 }
+else
 
-if($x===$y) {
-    echo"identyczne";
-}else{
-    echo"różne";
-}
+
 ?>
+</body>
+</html>
