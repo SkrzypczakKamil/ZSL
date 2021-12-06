@@ -1,0 +1,33 @@
+1.
+a) company ->ceo
+ceo-> CEOAge. CEOBirthday
+
+CEOBIRTHDAY->CEOAge
+b)
+
+Company-> CEO -> CEOAge
+Company->CEO->CEOBirthday
+
+CEO-> CEOBirthday->CEOAGE
+
+c)nie ma
+
+d)nie występuje
+
+2.
+a)
+
+DT->M2,M2,t1,t2.
+
+m2->t1
+m2->t2
+
+b)m1,m2
+m1,t1
+m1,t2
+t1,t2
+
+c)DT m2->t1
+
+d) tak
+m2->t1,t2
