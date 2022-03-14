@@ -5,7 +5,7 @@
     <title></title>
   </head>
   <body>
-    <h3> Dane użytkownika</h3>
+    <h3>Dane użytkownika</h3>
     <form action="./scripts/script.php" method="post">
       <input type="text" name="name" placeholder="Podaj imię">
       <input type="color" name="color">Wybierz Kolor
