@@ -8,11 +8,15 @@ function show1(){
 }
 
 
-//zamiana pierwszej litery na dużą pozostałe na małe usuknie białe znaki i goraniczenie do 10 znakow
-function validateName($string, $len, $color){
-return substr(ucfirst(strtolower(trim($string))),0,$len);
+// zamiana pierwszej litery na dużą,
+// pozostałe na małe,
+// usunie białe znaki i zwróci podciąg o długości $len
+function validateName($string, $len){
+  return substr(ucfirst(strtolower(trim($string))),0,$len);
 }
+
+// zwraca cztery pierwsze litery
 function nationality($string){
-return substr(ucfirst(strtolower(trim($string))),0,$len);
+  return validateName($string, 4); 
 }
  ?>
